@@ -1,9 +1,15 @@
 $white: #fff;
+$red: #AF2D49;
+$background: #000;
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Open+Sans:wght@400;700&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: black;
-    color: white;
+    background-color: $background;
+    color: $white;
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
 
@@ -14,7 +20,7 @@ h4,
 h5,
 h6 {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    color: #AF2D49;
+    color: $red;
 }
 
 header {
@@ -40,6 +46,12 @@ nav {
                 font-weight: 700;
                 line-height: 1.5em;
             }
+
+            a:hover {
+                color: $red;
+                transition: .4s ease;
+            }
+
         }
     }
 }
@@ -75,7 +87,7 @@ section {
     hr {
         width: 80%;
         margin-bottom: 20px;
-        border-color: #AF2D49;
+        border-color: $red;
     }
 
     p {
@@ -109,7 +121,7 @@ section {
 
         li {
             .production-credit {
-                color: #AF2D49;
+                color: $red;
                 font-weight: bolder;
             }
         }
@@ -118,7 +130,7 @@ section {
     .spotify {
         display: block;
         margin: 0 auto;
-        width: 40%;
+        max-width: 40%;
         margin-bottom: 40px;
     }
 }
@@ -126,7 +138,7 @@ section {
 .playlist {
     img {
         display: block;
-        width: 80%;
+        max-width: 80%;
         margin: 0 auto;
     }
 
@@ -160,6 +172,81 @@ section {
         background-position: center;
     }
 }
+
+@media screen and (min-width:768px) {
+    nav {
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-bottom: 120px;
+
+        ul {
+            display: grid;
+            grid-template-columns: 20% 20% 20% 20% 20%;
+
+            li {
+                display: inline-block;
+            }
+        }
+    }
+
+    .cover {
+        max-width: 50%;
+    }
+
+    main,
+    section {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    main {
+        margin-bottom: 80px;
+
+        p {
+            text-align: center;
+            font-size: 1.2em;
+        }
+    }
+
+    .tracklist {
+        li {
+            font-size: 1.2em;
+        }
+    }
+
+    .spotify {
+        width: 20%;
+    }
+
+    .playlist {
+        img {
+            width: 50%;
+        }
+
+        margin-bottom: 100px;
+    }
+
+    section.portrait {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        #signature {
+            width: 30%;
+        }
+
+        #logos {
+            width: 80%;
+        }
+    }
+}
+
+
+
+
+
+
+
+
 
 @media screen and (min-width:1024px) {
     header {

@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Open+Sans:wght@400;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: black;
-  color: white;
+  background-color: #000;
+  color: #fff;
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
 
@@ -40,6 +44,12 @@ nav ul li a {
   text-transform: uppercase;
   font-weight: 700;
   line-height: 1.5em;
+}
+
+nav ul li a:hover {
+  color: #AF2D49;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
 }
 
 section.heart {
@@ -126,7 +136,7 @@ section ol li .production-credit {
 section .spotify {
   display: block;
   margin: 0 auto;
-  width: 40%;
+  max-width: 40%;
   margin-bottom: 40px;
 }
 
@@ -136,7 +146,7 @@ section .spotify {
 
 .playlist img {
   display: block;
-  width: 80%;
+  max-width: 80%;
   margin: 0 auto;
 }
 
@@ -165,6 +175,62 @@ section .spotify {
   header {
     background-image: url(../img/front.jpg);
     background-position: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+  }
+  nav ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 20% 20% 20% 20% 20%;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+  }
+  nav ul li {
+    display: inline-block;
+  }
+  .cover {
+    max-width: 50%;
+  }
+  main,
+  section {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  main {
+    margin-bottom: 80px;
+  }
+  main p {
+    text-align: center;
+    font-size: 1.2em;
+  }
+  .tracklist li {
+    font-size: 1.2em;
+  }
+  .spotify {
+    width: 20%;
+  }
+  .playlist {
+    margin-bottom: 100px;
+  }
+  .playlist img {
+    width: 50%;
+  }
+  section.portrait {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  section.portrait #signature {
+    width: 30%;
+  }
+  section.portrait #logos {
+    width: 80%;
   }
 }
 
