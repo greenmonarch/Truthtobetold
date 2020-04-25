@@ -277,4 +277,22 @@ section {
         max-width: 1200px;
         margin: 0 auto;
     }
+
+    main {
+        margin-bottom: 80px;
+
+        .concept {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 1em;
+            max-width: 80%;
+            margin: 0 auto;
+            column-gap: 0;
+        }
+
+        p {
+            font-size: 1em;
+            text-align: left;
+        }
+    }
 }

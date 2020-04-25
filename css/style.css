@@ -260,5 +260,24 @@ section .spotify {
     max-width: 1200px;
     margin: 0 auto;
   }
+  main {
+    margin-bottom: 80px;
+  }
+  main .concept {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 1em;
+            column-gap: 1em;
+    max-width: 80%;
+    margin: 0 auto;
+    -webkit-column-gap: 0;
+            column-gap: 0;
+  }
+  main p {
+    font-size: 1em;
+    text-align: left;
+  }
 }
 /*# sourceMappingURL=style.css.map */
