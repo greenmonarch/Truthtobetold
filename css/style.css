@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Open+Sans:wght@400;700&display=swap");
+
 html {
   scroll-behavior: smooth;
 }
@@ -60,22 +61,22 @@ section.heart img {
   display: block;
   margin: 0 auto;
   -webkit-animation: beat .40s infinite alternate;
-          animation: beat .40s infinite alternate;
+  animation: beat .40s infinite alternate;
   -webkit-transform-origin: center;
-          transform-origin: center;
+  transform-origin: center;
 }
 
 @-webkit-keyframes beat {
   to {
     -webkit-transform: scale(1.4);
-            transform: scale(1.4);
+    transform: scale(1.4);
   }
 }
 
 @keyframes beat {
   to {
     -webkit-transform: scale(1.4);
-            transform: scale(1.4);
+    transform: scale(1.4);
   }
 }
 
@@ -184,51 +185,64 @@ section .spotify {
     margin: 0 auto;
     margin-bottom: 120px;
   }
+
   nav ul {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 20% 20% 20% 20% 20%;
-        grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
   }
+
   nav ul li {
     display: inline-block;
   }
+
   .cover {
     max-width: 50%;
   }
+
   main,
   section {
     max-width: 1200px;
     margin: 0 auto;
   }
+
   main {
     margin-bottom: 80px;
   }
+
   main p {
     text-align: center;
     font-size: 1.2em;
   }
+
   .tracklist li {
     font-size: 1.2em;
   }
+
   .spotify {
     width: 20%;
   }
+
   .playlist {
     margin-bottom: 100px;
   }
+
   .playlist img {
     width: 50%;
   }
+
   section.portrait {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
+
   section.portrait #signature {
     width: 30%;
   }
+
   section.portrait #logos {
     width: 80%;
   }
@@ -238,46 +252,55 @@ section .spotify {
   header {
     background-image: url(../img/hero-desktop.png);
   }
+
   nav {
     max-width: 1200px;
     margin: 0 auto;
     margin-bottom: 120px;
   }
+
   nav ul {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 20% 20% 20% 20% 20%;
-        grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
   }
+
   nav ul li {
     display: inline-block;
   }
+
   .cover {
     max-width: 50%;
   }
+
   main,
   section {
     max-width: 1200px;
     margin: 0 auto;
   }
+
   main {
     margin-bottom: 80px;
   }
+
   main .concept {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     -webkit-column-gap: 1em;
-            column-gap: 1em;
+    column-gap: 1em;
     max-width: 80%;
     margin: 0 auto;
     -webkit-column-gap: 0;
-            column-gap: 0;
+    column-gap: 0;
   }
+
   main p {
     font-size: 1em;
     text-align: left;
   }
 }
+
 /*# sourceMappingURL=style.css.map */
