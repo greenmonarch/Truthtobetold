@@ -1,6 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Open+Sans:wght@400;700&display=swap");
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  color: #AF2D49;
+}
+
 header {
   background-image: url(../img/hero-desktop.png);
   height: 100vh;
   background-size: cover;
+}
+
+nav {
+  margin-bottom: 122px;
+}
+
+nav ul {
+  display: inline;
+}
+
+nav ul li {
+  text-align: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.5em;
+}
+
+section.heart {
+  margin-bottom: 122px;
+}
+
+section.heart img {
+  display: block;
+  margin: 0 auto;
+  -webkit-animation: beat .40s infinite alternate;
+          animation: beat .40s infinite alternate;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+@-webkit-keyframes beat {
+  to {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+}
+
+@keyframes beat {
+  to {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+}
+
+main,
+section {
+  width: 100%;
+  max-width: 1200px;
+}
+
+main h1,
+section h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+main hr,
+section hr {
+  width: 80%;
+  margin-bottom: 20px;
+  border-color: #AF2D49;
+}
+
+main p,
+section p {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+main .cover,
+section .cover {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+main {
+  margin-bottom: 50px;
+}
+
+section ol {
+  display: inline;
+  text-transform: uppercase;
+  list-style-type: none;
+  text-align: center;
+}
+
+section ol :not(last-child) {
+  margin-bottom: 21px;
+}
+
+section ol li .production-credit {
+  color: #AF2D49;
+  font-weight: bolder;
+}
+
+section .spotify {
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+  margin-bottom: 40px;
+}
+
+.playlist {
+  margin-bottom: 40px;
+}
+
+.playlist img {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#jayrxk {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+#signature {
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+  margin-bottom: 40px;
+}
+
+#logos {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 375px) {
+  header {
+    background-image: url(../img/front.jpg);
+    background-position: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    background-image: url(../img/hero-desktop.png);
+  }
+  main, section {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */
