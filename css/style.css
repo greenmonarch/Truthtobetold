@@ -172,7 +172,25 @@ section .spotify {
   header {
     background-image: url(../img/hero-desktop.png);
   }
-  main, section {
+  nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+  }
+  nav ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 20% 20% 20% 20% 20%;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+  }
+  nav ul li {
+    display: inline-block;
+  }
+  .cover {
+    max-width: 50%;
+  }
+  main,
+  section {
     max-width: 1200px;
     margin: 0 auto;
   }

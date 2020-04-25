@@ -129,6 +129,7 @@ section {
         width: 80%;
         margin: 0 auto;
     }
+
     margin-bottom: 40px;
 }
 
@@ -147,10 +148,10 @@ section {
 }
 
 #logos {
-        display: block;
-        margin: 0 auto;
-        width: 90%;
-        margin-bottom: 10px;
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    margin-bottom: 10px;
 }
 
 @media screen and (min-width: 375px) {
@@ -165,7 +166,27 @@ section {
         background-image: url(../img/hero-desktop.png);
     }
 
-    main, section {
+    nav {
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-bottom: 120px;
+
+        ul {
+            display: grid;
+            grid-template-columns: 20% 20% 20% 20% 20%;
+
+            li {
+                display: inline-block;
+            }
+        }
+    }
+
+    .cover {
+        max-width: 50%;
+    }
+
+    main,
+    section {
         max-width: 1200px;
         margin: 0 auto;
     }
